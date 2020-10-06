@@ -9,11 +9,13 @@ console.log(emailadresses);
 
 // 1b. Jouw collega wil weten of het emailadres van Nick Stuivenberg in de lijst staat. Zoek dit voor hem uit. (dus: bevat onze array n.stuivenberg@novi.nl?)
 
-console.log(emailadresses.includes('n.stuivenberg@novi.nl'));
+console.log(emailadresses.includes('n.stuivenberg@novi.nl') && 'Nick bestaat!');
 
 // 1c. Collega's staan in de emaillijst op volgorde waarin ze bij Novi zjin komen werken. Nu blijkt echter dat een andere collega, Tess,
 // bij Novi is komen werken VOOR Melissa. Haar e-mailadres moet dus worden toegevoegd op de één na laatste plek: t.mellink@novi.nl
-emailadresses.splice(4, 0, 't.mellink@novi.nl');
+
+const index = emailadresses.length - 1;
+emailadresses.splice(index, 0, 't.mellink@novi.nl');
 console.log(emailadresses);
 
 // 1c. Er staat een foutje in de lijst. Het email adres van Mitchel moet worden aangepast naar m.vandergeest@novi.nl, maar je weet niet
