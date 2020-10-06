@@ -19,11 +19,11 @@ console.log(perimeter(12));
 // 4 geeft 13
 // 12 geeft 38
 
-function perimeter2(diamter) {
+function perimeterRounded(diamter) {
     return Math.round(Math.PI * diamter);
 }
-console.log(perimeter2(4));
-console.log(perimeter2(12));
+console.log(perimeterRounded(4));
+console.log(perimeterRounded(12));
 
 
 /* Opdracht 3 */
