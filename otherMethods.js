@@ -33,7 +33,6 @@ console.log(perimeterRounded(12));
 // "kroepoek" geeft "k"
 
 const lastChar = (word) => {
-
     return word.slice(- 1);
 }
 
@@ -74,6 +73,8 @@ console.log('uur: ' + myDate.getHours());
 // "Mitchel", "Nick" geeft "Mitchel"
 
 function compareStrings(stringOne, stringTwo) {
+    stringOne = stringOne.trim();
+    stringTwo = stringTwo.trim();
     if (stringOne.length === stringTwo.length) {
         return 'Beide namen zijn even lang'
     }
